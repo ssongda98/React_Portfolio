@@ -86,14 +86,14 @@ const Hero = () => {
             href="https://www.linkedin.com/in/sunnysong-dev"
             target="_blank"
           >
-            <img src="/linkedin.png" alt="" width={20} height={20} />
+            <img src="/hero/linkedin.png" alt="" width={20} height={20} />
           </motion.a>
           <motion.a
             variants={followVariants}
             href="https://github.com/ssongda98/2025_React_Portfolio"
             target="_blank"
           >
-            <img src="/github.png" alt="" width={20} height={20} />
+            <img src="/hero/github.png" alt="" width={20} height={20} />
           </motion.a>
           <motion.div variants={followVariants} className="w-[20px] h-full">
             <div className="text-xs rotate-90 bg-[#dd4c62] w-max h-full origin-top-left translate-x-[20px] px-2 flex justify-center items-center rounded-br-lg">
@@ -160,17 +160,17 @@ const Hero = () => {
             <Shape />
           </Suspense>
         </Canvas>
-        <div className="absolute left-0 right-0 bottom-0 h-full w-full md:h-[80%] md:w-max m-auto">
+        <div className="absolute left-8 right-0 lg:right-50 bottom-0 flex items-end h-full w-full md:h-[80%] md:w-max m-auto">
           <img
-            src="/sunny-desktop.webp"
+            src="/hero/sunnysong-desktop.webp"
             srcSet="
-                    /sunny-mobile.webp 412w,
-                    /sunny-desktop.webp 732w,
-                    /sunny-retina.webp 1464w
+                    /hero/sunnysong-mobile.webp 412w,
+                    /hero/sunnysong-desktop.webp 732w,
+                    /hero/sunnysong-retina.webp 1464w
                    "
             sizes="(max-width: 768px) 412px, 732px"
             alt="Sunny"
-            className="w-full h-full object-contain md:object-cover"
+            className="-scale-x-100 lg:scale-100 w-full object-contain md:object-cover"
             fetchPriority="high"
             loading="eager"
           />
